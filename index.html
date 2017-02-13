@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Eloisa Docton</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/5.0.0/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+
+    <script src="script.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<script src="https://use.fontawesome.com/05cc2df339.js"></script>
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+
+  </head>
+
+
+  <body>
+
+    <div class="hero">
+      <div id="object" class="tossing">
+        <img src="./images/sealogo.png" class="anchor" alt="logo"/>
+  </div>
+
+      <br>
+
+
+      <div class="blurb">
+        <p>Oceans are by far the largest animal habitat on earth. The oceans are so huge it is hard for scientists to explore them. Information on ocean animals is not as complete as information on land animals. It is known that animal life can be found at all depths of the ocean, from the surface to the deepest trenches that are over seven miles below the surface. </p>
+      </div>
+
+</div>
+
+    <div class="waves">
+      <div class="wave wave_1"></div>
+  		    <div class="wave wave_2"></div>
+  		    <div class="wave wave_3"></div>
+  		    <div class="wave wave_4"></div>
+  		    <div class="wave wave_5"></div>
+  	</div>
+
+
+
+    <script>
+    	$(window).scroll(function() {
+    		$('#animatedElement').each(function(){
+    		var imagePos = $(this).offset().top;
+
+    		var topOfWindow = $(window).scrollTop();
+    			if (imagePos < topOfWindow+400) {
+    				$(this).addClass("slideUp");
+    			}
+    		});
+    	});
+    </script>
+  </body>
+</html>
